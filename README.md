@@ -1,6 +1,6 @@
 # IA générative en action: Intégrez les LLM dans vos applications
 
-Ce repo contient les quelques notebooks Jupyter de démo associés au meetup dont une replay est disponible sur le [site de younup](https://lnkd.in/enf-y6Jg)
+Ce repo contient les quelques notebooks Jupyter de démo associés au meetup dont un replay est disponible sur le [site de younup](https://lnkd.in/enf-y6Jg)
 
 Le fichier `.env.example` à la racine contient les quelques variables nécessaires (clé OpenAI, url Redis ou Neo4J, etc.). Faire une copie de ce fichier, le renommer `.env` et renseigner ses propres variables.
 
