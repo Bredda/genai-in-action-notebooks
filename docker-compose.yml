@@ -1,0 +1,33 @@
+version: "3.3"
+services:
+  redis:
+    image: redis/redis-stack:7.2.0-v6
+    ports:
+      - 6379:6379
+      - 8001:8001
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+    volumes:
+      - redis_data:/data
+  neo4j:
+    image: neo4j:5.19.0
+    environment:
+      - NEO4J_apoc_export_file_enabled=true
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc_import_file_use__neo4j__config=true
+      - NEO4J_PLUGINS=["apoc", "graph-data-science"]
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_import:/var/lib/neo4j/import
+      - ./neo4j_plugins:/plugins
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_import:
+  neo4j_plugins:
+  redis_data:
