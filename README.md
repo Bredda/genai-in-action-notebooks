@@ -9,7 +9,7 @@ Le fichier `docker-compose` à la racine contient une instance Redis ainsi qu'un
 ### 01-Simple QA chat with memory
 
 Implémentation d'un simple Chat bot avec mémoire
-La mémoire utilisée est pour l'exemple est un simple tableau en mémoire.
+La mémoire utilisée pour l'exemple est un simple tableau en mémoire.
 
 ### 02-Retrival Augmented Generation
 
@@ -17,7 +17,7 @@ Implémentation d'un système RAG.
 
 La vector store utilisé est Redis (disponible dans le `docker-compose` à la racine du repo).
 
-La mémoire est-elle aussi persistée dans l'instance Redis
+La mémoire est, elle aussi, persistée dans l'instance Redis
 
 ### 03-RAG youtube.ipynb
 
