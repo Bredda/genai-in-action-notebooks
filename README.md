@@ -27,7 +27,7 @@ Implémentation d'un système RAG similaire au précédent mais dont la source d
 
 Implémentation d'un agent simple disposant d'un Tool de type "Recherche Internet".
 
-La recherche utilise le service (Tavily Search)[https://docs.tavily.com/] disposant d'un free tier.
+La recherche utilise le service [Tavily Search](https://docs.tavily.com/) disposant d'un free tier.
 
 ### 05-RAG knowledge graph
 
